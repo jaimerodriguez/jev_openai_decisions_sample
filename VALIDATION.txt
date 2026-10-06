@@ -1,0 +1,14 @@
+Verified October 6, 2026 (America/Los_Angeles)
+
+33 offline tests passed using Python 3.14.3 and HTTPX 0.28.1.
+Controlled integer clock and HTTPX streaming fixtures verify API timing excludes
+request preparation and JSON decoding, includes the full response body, and
+records timeout elapsed time without inventing a completed latency.
+Redirect/error, connection policy, warm-up isolation, percentiles, paired deltas,
+case-level bootstrap, CSV/Markdown report, and existing routing tests passed.
+Dry-run schedule: 23 cases x 3 repeats x 2 providers + 4 warm-ups = 142 requests.
+No network calls or scores produced by that dry run.
+Bash syntax check passed. Dataset and curl script unchanged.
+No live provider calls or performance measurements.
+Dependency testing used an existing HTTPX installation; a temporary pip download
+was unavailable due to DNS restrictions. requirements.txt declares the dependency.
